@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--<link rel="icon" href="../../favicon.ico">-->
+
+    <title>Pool Controller</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/bootstrap-theme.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" type="text/css" href="./css/picontroller.css">
+    <script src="./js/jquery-2.1.3.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="./js/ie10-viewport-bug-workaround.js"></script>
+
+    <script type="text/javascript">
+        function CheckButtonStatus(DeviceName) {
+            var url = 'http://YOUR_PI_IP_ADDRESS:PORT/devices/' + DeviceName + '/state';
+            $.ajax({
+                type: 'GET',
+                url: url
+            })
+            .done(function (data) {
+               UpdateButton(DeviceName, data);
+            });
+        }
+		
+		function CheckSolarStatus(DeviceName) {
+            var url = 'http://YOUR_PI_IP_ADDRESS:PORT/devices/poolsolar/state';
+            $.ajax({
+                type: 'GET',
+                url: url
+            })
+            .done(function (data) {
+               UpdateSolar(data);
+            });
+        }
+
+        function UpdateButton(DeviceName, data) {
+            if (data == 'ON') {
+                if ($('#' + DeviceName + 'Img').hasClass('Pump'))
+                    $('#' + DeviceName + 'Img').attr('src', './images/poolpumpon.png');
+                else if ($('#' + DeviceName + 'Img').hasClass('Light'))
+                    $('#' + DeviceName + 'Img').attr('src', './images/lighton.png');
+                else if ($('#' + DeviceName + 'Img').hasClass('WaterFall'))
+                    $('#' + DeviceName + 'Img').attr('src', './images/waterfallon.png');
+            }
+            else if (data == 'OFF') {
+                if ($('#' + DeviceName + 'Img').hasClass('Pump'))
+                    $('#' + DeviceName + 'Img').attr('src', './images/poolpumpoff.png');
+                else if ($('#' + DeviceName + 'Img').hasClass('Light'))
+                    $('#' + DeviceName + 'Img').attr('src', './images/lightoff.png');
+                else if ($('#' + DeviceName + 'Img').hasClass('WaterFall'))
+                    $('#' + DeviceName + 'Img').attr('src', './images/waterfalloff.png');
+            }
+        }
+		
+		function UpdateSolar(data) {
+            $('#solarstatus').html("Solar Status " + data )
+        }
+
+        function UpdateTemp(sensorName, data) {
+            if (sensorName == 'pooltemp') {
+              $('#pool').html("Pool Water " + data + "&#8457")
+            }
+            if (sensorName == 'solartemp') {
+              $('#solar').html("Solar Water " + data + "&#8457") 
+            }
+            if (sensorName == 'outsidetemp') {
+               $('#outside').html("Outside Air " + data + "&#8457")
+            }
+        }
+
+        function CheckTemp(sensorName) {
+         var url = 'http://YOUR_PI_IP_ADDRESS:PORT/sensors/' + sensorName ;
+            $.ajax({
+                type: 'GET',
+                url: url
+            })
+            .done(function (data) {
+               UpdateTemp(sensorName, data);
+            });
+        }
+
+        $(document).ready(function () {
+            setInterval(function () {
+                    CheckButtonStatus('poolpump');
+                    CheckButtonStatus('waterfallpump');
+                    CheckButtonStatus('poollights');
+					CheckButtonStatus('yardlights');
+                    CheckSolarStatus();
+                    UpdateDateTime();
+                },  2500);
+            setInterval(function () {
+                    CheckTemp('pooltemp');
+                    CheckTemp('solartemp');
+                    CheckTemp('outsidetemp');
+                }, 10000);
+
+                $('.GPIOButton').click(function () {
+                    var deviceName = $(this).attr('id');
+                    var url = 'http://YOUR_PI_IP_ADDRESS:PORT/devices/' + deviceName;
+                    if ($('#' + deviceName + 'Img').attr('src').indexOf('off.png') > -1)
+                        url = url + '/ON';
+                    else
+                        url = url + '/OFF';
+
+                    $.ajax({
+                        type: 'POST',
+                        url: url
+                    })
+                    .done(function (data) {
+                        UpdateButton(deviceName, data);
+                    });
+                });
+            });
+    </script>
+</head>
+
+<body>
+    <div class="container controller">
+        <h3>Pool Controller</h3>
+        <table class="buttonTable">
+            <tbody><tr>
+                <th colspan="3"><br></th>
+            </tr>
+            <tr>
+                <td> 
+                    <img class="Light" id="whitespaceImg" src="./images/whitespace.png" alt="Whitespace">
+                </td>
+                <td>
+                    <button class="GPIOButton" id="poolpump">Filter Pump</button>
+                </td>
+                <td>
+                    <img class="Pump" id="poolpumpImg" src="./images/poolpumpoff.png" alt="On">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button class="GPIOButton" id="waterfallpump">Waterfall</button>
+                </td>
+                <td>
+                    <img class="WaterFall" id="waterfallpumpImg" src="./images/waterfalloff.png" alt="On">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button class="GPIOButton" id="poollights">Pool Lights</button>
+                </td>
+                <td>
+                    <img class="Light" id="poollightsImg" src="./images/lightoff.png" alt="On">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button class="GPIOButton" id="yardlights">Yard Lights</button>
+                </td>
+                <td>
+                    <img class="Light" id="yardlightsImg" src="./images/lightoff.png" alt="On">
+                </td>
+            </tr>
+			<tr>
+				 <td></td>
+                <td>
+                    <h3 id="solarstatus">Solar Status OFF</h3>
+                </td>
+                <td>
+                    
+                </td>
+            </tr>
+			<tr>
+                <td></td>
+                <td>
+                    <h3 id="pool">Pool Water --.--℉</h3>
+                </td>
+                <td>
+                    
+                </td>
+            </tr>
+			<tr>
+                <td></td>
+                <td>
+                    <h3 id="solar">Solar Water --.--℉</h3>
+                </td>
+                <td>
+                    
+                </td>
+            </tr>
+	    <tr>
+                <td></td>
+                <td>
+                    <h3 id="outside">Outside Air --.--℉</h3>
+                </td>
+                <td>
+                    
+                </td>
+            </tr>
+            <tr>
+                <th colspan="3"><br></th>
+            </tr>
+            <tr>
+                <th colspan="3" class="text-center"><label id="ControllerDatetime"></label></th>
+            </tr>
+        </tbody></table>
+    </div><!-- /.container -->
+</body></html>
