@@ -1,0 +1,2 @@
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\samples-develop\App2App WebServer\WebServerApp\WebServer\WebServer.csproj;arm
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\samples-develop\App2App WebServer\WebServerApp\WebServerTask\WebServerTask.csproj;arm

@@ -1,0 +1,2 @@
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 03\PoolWebServer\WebServer\PoolWebServer.csproj;arm
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 03\PoolWebServer\WebServerTask\WebServerTask.csproj;arm

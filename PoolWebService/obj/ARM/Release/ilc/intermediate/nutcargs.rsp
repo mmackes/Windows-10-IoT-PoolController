@@ -1,0 +1,9 @@
+/ignoreAccessChecks
+/metadataFile "C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 03\PoolWebService\obj\ARM\Release\ilc\intermediate\ILTransformed\PoolWebService.metadata"
+/reflectionMetadataAssemblyName "System.Private.CoreLib"
+/o
+/sharedGenerics
+/ilmergeinfo "C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 03\PoolWebService\obj\ARM\Release\ilc\intermediate\ILTransformed\PoolWebService.csv"
+/sharedGenericsMode StandardHeuristics
+/in "C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 03\PoolWebService\obj\ARM\Release\ilc\intermediate\ILTransformed\PoolWebService.ilexe"
+/out "C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 03\PoolWebService\obj\ARM\Release\ilc\intermediate\MDIL\PoolWebService.mdilexe"

@@ -1,0 +1,60 @@
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\WebServerApp\WebServerTask\bin\ARM\Release\WebServerTask.winmd
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\WebServerApp\WebServerTask\bin\ARM\Release\WebServerTask.pdb
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\WebServerApp\WebServerTask\bin\ARM\Release\WebServerTask.pri
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\WebServerApp\WebServerTask\obj\ARM\Release\WebServerTask.winmd
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\WebServerApp\WebServerTask\obj\ARM\Release\WebServerTask.pdb
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\WebServerApp\WebServerTask\obj\ARM\Release\WebServerTask.winmdobj
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\WebServerApp\WebServerTask\obj\ARM\Release\WebServerTask.compile.pdb
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\WebServerApp\WebServerTask\obj\ARM\Release\ResourceHandlingTask.state
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\WebServerApp\WebServerTask\obj\ARM\Release\priconfig.xml
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\WebServerApp\WebServerTask\obj\ARM\Release\priconfig.xml.intermediate
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\WebServerApp\WebServerTask\obj\ARM\Release\layout.resfiles
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\WebServerApp\WebServerTask\obj\ARM\Release\layout.resfiles.intermediate
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\WebServerApp\WebServerTask\obj\ARM\Release\resources.resfiles
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\WebServerApp\WebServerTask\obj\ARM\Release\resources.resfiles.intermediate
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\WebServerApp\WebServerTask\obj\ARM\Release\pri.resfiles
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\WebServerApp\WebServerTask\obj\ARM\Release\pri.resfiles.intermediate
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\WebServerApp\WebServerTask\obj\ARM\Release\qualifiers.txt
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\WebServerApp\WebServerTask\obj\ARM\Release\qualifiers.txt.intermediate
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\WebServerApp\WebServerTask\obj\ARM\Release\MultipleQualifiersPerDimensionFound.txt
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\WebServerApp\WebServerTask\obj\ARM\Release\WebServerTask.csprojResolveAssemblyReference.cache
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 02\WebServerApp\WebServerTask\bin\ARM\Release\WebServerTask.winmd
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 02\WebServerApp\WebServerTask\bin\ARM\Release\WebServerTask.pdb
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 02\WebServerApp\WebServerTask\bin\ARM\Release\WebServerTask.pri
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 02\WebServerApp\WebServerTask\obj\ARM\Release\WebServerTask.winmd
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 02\WebServerApp\WebServerTask\obj\ARM\Release\WebServerTask.pdb
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 02\WebServerApp\WebServerTask\obj\ARM\Release\WebServerTask.winmdobj
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 02\WebServerApp\WebServerTask\obj\ARM\Release\WebServerTask.compile.pdb
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 02\WebServerApp\WebServerTask\obj\ARM\Release\ResourceHandlingTask.state
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 02\WebServerApp\WebServerTask\obj\ARM\Release\priconfig.xml
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 02\WebServerApp\WebServerTask\obj\ARM\Release\priconfig.xml.intermediate
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 02\WebServerApp\WebServerTask\obj\ARM\Release\layout.resfiles
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 02\WebServerApp\WebServerTask\obj\ARM\Release\layout.resfiles.intermediate
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 02\WebServerApp\WebServerTask\obj\ARM\Release\resources.resfiles
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 02\WebServerApp\WebServerTask\obj\ARM\Release\resources.resfiles.intermediate
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 02\WebServerApp\WebServerTask\obj\ARM\Release\pri.resfiles
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 02\WebServerApp\WebServerTask\obj\ARM\Release\pri.resfiles.intermediate
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 02\WebServerApp\WebServerTask\obj\ARM\Release\qualifiers.txt
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 02\WebServerApp\WebServerTask\obj\ARM\Release\qualifiers.txt.intermediate
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 02\WebServerApp\WebServerTask\obj\ARM\Release\MultipleQualifiersPerDimensionFound.txt
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 02\WebServerApp\WebServerTask\obj\ARM\Release\WebServerTask.csprojResolveAssemblyReference.cache
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 03\PoolWebServer\WebServerTask\bin\ARM\Release\WebServerTask.winmd
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 03\PoolWebServer\WebServerTask\bin\ARM\Release\WebServerTask.pdb
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 03\PoolWebServer\WebServerTask\bin\ARM\Release\WebServerTask.pri
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 03\PoolWebServer\WebServerTask\obj\ARM\Release\WebServerTask.csprojResolveAssemblyReference.cache
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 03\PoolWebServer\WebServerTask\obj\ARM\Release\WebServerTask.winmd
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 03\PoolWebServer\WebServerTask\obj\ARM\Release\WebServerTask.pdb
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 03\PoolWebServer\WebServerTask\obj\ARM\Release\WebServerTask.winmdobj
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 03\PoolWebServer\WebServerTask\obj\ARM\Release\WebServerTask.compile.pdb
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 03\PoolWebServer\WebServerTask\obj\ARM\Release\ResourceHandlingTask.state
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 03\PoolWebServer\WebServerTask\obj\ARM\Release\priconfig.xml
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 03\PoolWebServer\WebServerTask\obj\ARM\Release\priconfig.xml.intermediate
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 03\PoolWebServer\WebServerTask\obj\ARM\Release\layout.resfiles
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 03\PoolWebServer\WebServerTask\obj\ARM\Release\layout.resfiles.intermediate
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 03\PoolWebServer\WebServerTask\obj\ARM\Release\resources.resfiles
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 03\PoolWebServer\WebServerTask\obj\ARM\Release\resources.resfiles.intermediate
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 03\PoolWebServer\WebServerTask\obj\ARM\Release\pri.resfiles
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 03\PoolWebServer\WebServerTask\obj\ARM\Release\pri.resfiles.intermediate
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 03\PoolWebServer\WebServerTask\obj\ARM\Release\qualifiers.txt
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 03\PoolWebServer\WebServerTask\obj\ARM\Release\qualifiers.txt.intermediate
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 03\PoolWebServer\WebServerTask\obj\ARM\Release\MultipleQualifiersPerDimensionFound.txt
