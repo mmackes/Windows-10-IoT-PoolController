@@ -305,21 +305,29 @@ namespace WebServerTask
         //Write the response for HTTP GET's and POST's 
         private async Task WriteResponseAsync(string RequestMsg, string ResponseMsg, bool urlFound, byte[] bodyArray, IOutputStream os)
         {
-            var updateMessage = new ValueSet();
-            updateMessage.Add("Request", RequestMsg);
-            updateMessage.Add("Response", ResponseMsg);
-            var responseStatus = await appServiceConnection.SendMessageAsync(updateMessage);
-
-            MemoryStream bodyStream = new MemoryStream(bodyArray);
-            using (Stream response = os.AsStreamForWrite())
+            try  //The appService will die after a day or so. Let 's try catch it seperatly so the server will still return
             {
-                string header = GetHeader(urlFound, bodyStream.Length.ToString());
-                byte[] headerArray = Encoding.UTF8.GetBytes(header);
-                await response.WriteAsync(headerArray, 0, headerArray.Length);
-                if (urlFound)
-                    await bodyStream.CopyToAsync(response);
-                await response.FlushAsync();
+                var updateMessage = new ValueSet();
+                updateMessage.Add("Request", RequestMsg);
+                updateMessage.Add("Response", ResponseMsg);
+                var responseStatus = await appServiceConnection.SendMessageAsync(updateMessage);
             }
+            catch (Exception) { }
+
+            try
+            { 
+            MemoryStream bodyStream = new MemoryStream(bodyArray);
+                using (Stream response = os.AsStreamForWrite())
+                {
+                    string header = GetHeader(urlFound, bodyStream.Length.ToString());
+                    byte[] headerArray = Encoding.UTF8.GetBytes(header);
+                    await response.WriteAsync(headerArray, 0, headerArray.Length);
+                    if (urlFound)
+                        await bodyStream.CopyToAsync(response);
+                    await response.FlushAsync();
+                }
+            }
+            catch (Exception) { }
         }
 
         //Creates the HTTP header text for found and not found urls
