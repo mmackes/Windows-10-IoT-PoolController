@@ -199,7 +199,7 @@ namespace WebServerTask
                     urlFound = true;
                     break;
                 case "/DEVICES/YARDLIGHTS/STATE":
-                    responseMsg = Devices.PoolLightsState;
+                    responseMsg = Devices.YardLightsState;
                     urlFound = true;
                     break;
                 case "/DEVICES/POOLSOLAR/STATE":
