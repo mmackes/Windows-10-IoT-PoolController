@@ -38,3 +38,23 @@ C:\Users\mikema\Documents\Visual Studio 2015\Projects\WebServerApp\WebServerTask
 C:\Users\mikema\Documents\Visual Studio 2015\Projects\WebServerApp\WebServerTask\obj\ARM\Debug\qualifiers.txt
 C:\Users\mikema\Documents\Visual Studio 2015\Projects\WebServerApp\WebServerTask\obj\ARM\Debug\qualifiers.txt.intermediate
 C:\Users\mikema\Documents\Visual Studio 2015\Projects\WebServerApp\WebServerTask\obj\ARM\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 03\PoolWebServer\WebServerTask\bin\ARM\Debug\WebServerTask.winmd
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 03\PoolWebServer\WebServerTask\bin\ARM\Debug\WebServerTask.pdb
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 03\PoolWebServer\WebServerTask\bin\ARM\Debug\WebServerTask.pri
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 03\PoolWebServer\WebServerTask\obj\ARM\Debug\WebServerTask.csprojResolveAssemblyReference.cache
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 03\PoolWebServer\WebServerTask\obj\ARM\Debug\WebServerTask.winmd
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 03\PoolWebServer\WebServerTask\obj\ARM\Debug\WebServerTask.pdb
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 03\PoolWebServer\WebServerTask\obj\ARM\Debug\WebServerTask.winmdobj
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 03\PoolWebServer\WebServerTask\obj\ARM\Debug\WebServerTask.compile.pdb
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 03\PoolWebServer\WebServerTask\obj\ARM\Debug\ResourceHandlingTask.state
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 03\PoolWebServer\WebServerTask\obj\ARM\Debug\priconfig.xml
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 03\PoolWebServer\WebServerTask\obj\ARM\Debug\priconfig.xml.intermediate
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 03\PoolWebServer\WebServerTask\obj\ARM\Debug\layout.resfiles
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 03\PoolWebServer\WebServerTask\obj\ARM\Debug\layout.resfiles.intermediate
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 03\PoolWebServer\WebServerTask\obj\ARM\Debug\resources.resfiles
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 03\PoolWebServer\WebServerTask\obj\ARM\Debug\resources.resfiles.intermediate
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 03\PoolWebServer\WebServerTask\obj\ARM\Debug\pri.resfiles
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 03\PoolWebServer\WebServerTask\obj\ARM\Debug\pri.resfiles.intermediate
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 03\PoolWebServer\WebServerTask\obj\ARM\Debug\qualifiers.txt
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 03\PoolWebServer\WebServerTask\obj\ARM\Debug\qualifiers.txt.intermediate
+C:\Users\mikema\Documents\Visual Studio 2015\Projects\Working\version 03\PoolWebServer\WebServerTask\obj\ARM\Debug\MultipleQualifiersPerDimensionFound.txt

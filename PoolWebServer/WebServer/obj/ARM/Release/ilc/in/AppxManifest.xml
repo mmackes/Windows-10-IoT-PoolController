@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="PoolWebServer" Publisher="CN=Test" Version="1.0.20.0" ProcessorArchitecture="arm" />
+  <Identity Name="PoolWebServer" Publisher="CN=Test" Version="1.0.23.0" ProcessorArchitecture="arm" />
   <mp:PhoneIdentity PhoneProductId="8fdb9bc1-d06d-4286-8e2c-a4dff10ad183" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>PoolWebServer</DisplayName>
@@ -26,6 +26,9 @@
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
       </uap:VisualElements>
       <Extensions>
+        <uap:Extension Category="windows.appService" EntryPoint="WebServerTask.WebServerBGTask">
+          <uap:AppService Name="App2AppComService" />
+        </uap:Extension>
         <uap:Extension Category="windows.fileTypeAssociation">
           <uap:FileTypeAssociation Name="dat">
             <uap:DisplayName>dat</uap:DisplayName>
@@ -33,9 +36,6 @@
               <uap:FileType>.dat</uap:FileType>
             </uap:SupportedFileTypes>
           </uap:FileTypeAssociation>
-        </uap:Extension>
-        <uap:Extension Category="windows.appService" EntryPoint="WebServerTask.WebServerBGTask">
-          <uap:AppService Name="App2AppComService" />
         </uap:Extension>
       </Extensions>
     </Application>
@@ -49,10 +49,9 @@
       <InProcessServer>
         <Path>CLRHost.dll</Path>
         <ActivatableClass ActivatableClassId="WebServerTask.HttpServer" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="WebServerTask.Devices" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="WebServerTask.FileIO" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="WebServerTask.Sensors" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="WebServerTask.WebServerBGTask" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="WebServerTask.Devices" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="WebServerTask.Sensors" ThreadingModel="both" />
       </InProcessServer>
     </Extension>
   </Extensions>

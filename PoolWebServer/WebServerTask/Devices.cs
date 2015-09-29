@@ -176,8 +176,8 @@ namespace WebServerTask
             }
         }
 
-        //Gets the state of a device based upon it ActiveState
-        //ActiveState means what required to turn the device on High or Low on the GPIO pin 
+        //Gets the state of a device based upon it's ActiveState
+        //ActiveState means whats required to turn the device on High or Low on the GPIO pin 
         private static string GetState(GpioPinValue value, GpioPinValue ActiveState)
         {
             string state = "OFF";
